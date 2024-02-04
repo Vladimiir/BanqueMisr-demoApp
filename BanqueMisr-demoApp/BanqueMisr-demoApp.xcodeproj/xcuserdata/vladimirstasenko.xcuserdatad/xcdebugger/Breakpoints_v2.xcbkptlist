@@ -8,14 +8,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B7EF313F-0DBA-4B5E-9116-4F347D9A2C88"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BanqueMisr-demoApp/Presentation/CurrenciesList/CurrenciesListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "viewWillAppear()"
             landmarkType = "7">
             <Locations>
@@ -62,8 +62,8 @@
             filePath = "BanqueMisr-demoApp/Data/Networking/CurrenciesService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "fetchAllSupportedSymbols(handler:)"
             landmarkType = "7">
             <Locations>
@@ -111,6 +111,21 @@
                   startingLineNumber = "28"
                   endingLineNumber = "28"
                   offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "436C2C6D-5C0C-4730-B088-386D9D16859C - 9d308040db1303e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;BanqueMisr_demoApp.CurrenciesListModel&gt;) -&gt; () in BanqueMisr_demoApp.CurrenciesService.fetchAllSupportedSymbols(handler: (Swift.Optional&lt;BanqueMisr_demoApp.CurrenciesListModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BanqueMisr-demoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirstasenko/Documents/Repositories/BanqueMisr-demoApp/BanqueMisr-demoApp/BanqueMisr-demoApp/Data/Networking/CurrenciesService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "96">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -161,6 +176,102 @@
             endingLineNumber = "30"
             landmarkName = "get(with:type:handler:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1CC67C9-6467-4732-BED1-567481FFE553"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BanqueMisr-demoApp/Data/Networking/CurrenciesService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "fetchLatestEndpoints(handler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E1CC67C9-6467-4732-BED1-567481FFE553 - bb638f2b75bf84d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;BanqueMisr_demoApp.CurrencyExchangeRates&gt;) -&gt; () in BanqueMisr_demoApp.CurrenciesService.fetchLatestEndpoints(handler: (Swift.Optional&lt;BanqueMisr_demoApp.CurrencyExchangeRates&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BanqueMisr-demoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirstasenko/Documents/Repositories/BanqueMisr-demoApp/BanqueMisr-demoApp/BanqueMisr-demoApp/Data/Networking/CurrenciesService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "E1CC67C9-6467-4732-BED1-567481FFE553 - bb638f2b75bf84b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;BanqueMisr_demoApp.CurrencyExchangeRates&gt;) -&gt; () in BanqueMisr_demoApp.CurrenciesService.fetchLatestEndpoints(handler: (Swift.Optional&lt;BanqueMisr_demoApp.CurrencyExchangeRates&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BanqueMisr-demoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirstasenko/Documents/Repositories/BanqueMisr-demoApp/BanqueMisr-demoApp/BanqueMisr-demoApp/Data/Networking/CurrenciesService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B00F432-0FDC-4A6E-AC1A-24E7EC1D7802"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BanqueMisr-demoApp/Data/Networking/CurrenciesService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "fetchLatestEndpoints(handler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2B00F432-0FDC-4A6E-AC1A-24E7EC1D7802 - 56495e6e8f49e807"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BanqueMisr_demoApp.CurrenciesService.fetchLatestEndpoints(handler: (Swift.Optional&lt;BanqueMisr_demoApp.CurrencyExchangeRates&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BanqueMisr-demoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirstasenko/Documents/Repositories/BanqueMisr-demoApp/BanqueMisr-demoApp/BanqueMisr-demoApp/Data/Networking/CurrenciesService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "756">
+               </Location>
+               <Location
+                  uuid = "2B00F432-0FDC-4A6E-AC1A-24E7EC1D7802 - 56495e6e8f49ebe0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BanqueMisr_demoApp.CurrenciesService.fetchLatestEndpoints(handler: (Swift.Optional&lt;BanqueMisr_demoApp.CurrencyExchangeRates&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BanqueMisr-demoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirstasenko/Documents/Repositories/BanqueMisr-demoApp/BanqueMisr-demoApp/BanqueMisr-demoApp/Data/Networking/CurrenciesService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "756">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

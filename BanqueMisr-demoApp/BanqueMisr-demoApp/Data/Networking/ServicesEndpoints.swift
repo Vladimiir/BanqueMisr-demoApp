@@ -11,5 +11,6 @@ class ServicesEndpoints {
     
     static let accessKey = "9a576292012e931132918d6a5886667c"
     
-    static let currenciesPath = "http://data.fixer.io/api/latest?"
+    static let symbolsPath = "http://data.fixer.io/api/symbols?"
+    static let latestPath = "http://data.fixer.io/api/latest?"
 }

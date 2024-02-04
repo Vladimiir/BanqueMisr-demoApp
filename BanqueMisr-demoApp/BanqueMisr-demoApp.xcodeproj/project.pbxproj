@@ -21,6 +21,7 @@
 		364525602B6FDA4500D0BAAD /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645255F2B6FDA4500D0BAAD /* Currency.swift */; };
 		364525622B6FDD7800D0BAAD /* URLConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364525612B6FDD7800D0BAAD /* URLConstructor.swift */; };
 		364525652B6FE0FC00D0BAAD /* CurrenciesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364525642B6FE0FC00D0BAAD /* CurrenciesListViewModel.swift */; };
+		364525692B6FE89000D0BAAD /* CurrencyExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364525682B6FE89000D0BAAD /* CurrencyExchangeRates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		364525612B6FDD7800D0BAAD /* URLConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstructor.swift; sourceTree = "<group>"; };
 		364525642B6FE0FC00D0BAAD /* CurrenciesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesListViewModel.swift; sourceTree = "<group>"; };
 		364525672B6FE4BC00D0BAAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		364525682B6FE89000D0BAAD /* CurrencyExchangeRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeRates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			children = (
 				3645255F2B6FDA4500D0BAAD /* Currency.swift */,
 				3645255D2B6FD9BE00D0BAAD /* CurrenciesListModel.swift */,
+				364525682B6FE89000D0BAAD /* CurrencyExchangeRates.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				364525602B6FDA4500D0BAAD /* Currency.swift in Sources */,
 				3645252A2B6FCE1D00D0BAAD /* BanqueMisr_demoAppApp.swift in Sources */,
 				364525652B6FE0FC00D0BAAD /* CurrenciesListViewModel.swift in Sources */,
+				364525692B6FE89000D0BAAD /* CurrencyExchangeRates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

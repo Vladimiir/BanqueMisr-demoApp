@@ -15,6 +15,9 @@ class CurrenciesListViewModel: ObservableObject {
     private var currenciesService: ICurrenciesService = CurrenciesService()
     
     func viewWillAppear() {
+//        currenciesService.fetchLatestEndpoints { rates in
+//            
+//        }
         currenciesService.fetchAllSupportedSymbols { currenciesList in
             
         }
