@@ -24,6 +24,9 @@ class CurrenciesListViewModel: ObservableObject {
     @Published var textFromCurrency = "1"
     @Published var textToCurrency = ""
     
+    /// The list of made currency exchanges
+    var exchangesList: [CurrencyExchange] = []
+    
     // TODO: move it somewhere?
     @Published var isLoaded = false
     
@@ -55,6 +58,15 @@ class CurrenciesListViewModel: ObservableObject {
         }
         
         self.textToCurrency = "\(decimalFromCurrency * rate)"
+        addExchangeToList()
+    }
+    
+    func addExchangeToList() {
+        exchangesList.append(CurrencyExchange(fromCurrency: selectedFromCurrency,
+                                              toCurrency: selectedToCurrency,
+                                              fromCurrencyAmount: textFromCurrency,
+                                              toCurrencyAmount: textToCurrency,
+                                              date: exchangeRates?.date ?? ""))
     }
     
     func swapCurrencies() {
@@ -62,5 +74,9 @@ class CurrenciesListViewModel: ObservableObject {
         let from = selectedFromCurrency
         selectedFromCurrency = selectedToCurrency
         selectedToCurrency = from
+    }
+    
+    func detailsButtonDidPress() {
+        
     }
 }

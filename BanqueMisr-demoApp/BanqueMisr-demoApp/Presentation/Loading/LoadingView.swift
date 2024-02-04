@@ -18,6 +18,7 @@ struct LoadingView: View {
     var body: some View {
         HStack {
             Text("Loading")
+                .font(.title)
         }
         .task {
             vm.viewWillAppear()

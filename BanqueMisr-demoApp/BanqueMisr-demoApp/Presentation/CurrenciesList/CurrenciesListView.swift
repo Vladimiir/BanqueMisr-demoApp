@@ -19,7 +19,6 @@ struct CurrenciesListView: View {
         NavigationStack {
             VStack {
                 HStack {
-                    // TODO: separate all these views
                     Picker("FROM", selection: $vm.selectedFromCurrency) {
                         if let currenciesList = vm.currenciesList {
                             ForEach(Array(currenciesList.symbols.keys.sorted().enumerated()),
@@ -73,24 +72,22 @@ struct CurrenciesListView: View {
                     TextField(text: $vm.textToCurrency) {
                         Text("")
                     }
+                    .disabled(true)
                     .keyboardType(.numberPad)
                     .minimumScaleFactor(0.1)
                     .font(.title3)
                     .multilineTextAlignment(.center)
                     .border(Color.gray, width: 1)
-                    .onChange(of: vm.textToCurrency) { _, _ in
-                        vm.updateRates()
-                    }
                 }
                 .padding(.horizontal, 50)
                 .padding(.bottom, 15)
                 
-                Button(action: {
-                    
-                }, label: {
+                NavigationLink {
+                    DetailsView(vm: DetailsViewModel(exchangesList: vm.exchangesList))
+                } label: {
                     Text("Details")
                         .font(.title3)
-                })
+                }
             }
             .navigationTitle(Text("Currency!"))
         }
