@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3645252A2B6FCE1D00D0BAAD /* BanqueMisr_demoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364525292B6FCE1D00D0BAAD /* BanqueMisr_demoAppApp.swift */; };
+		3645252C2B6FCE1D00D0BAAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645252B2B6FCE1D00D0BAAD /* ContentView.swift */; };
+		3645252E2B6FCE1E00D0BAAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3645252D2B6FCE1E00D0BAAD /* Assets.xcassets */; };
+		364525312B6FCE1E00D0BAAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364525302B6FCE1E00D0BAAD /* Preview Assets.xcassets */; };
+		3645253B2B6FCE1E00D0BAAD /* BanqueMisr_demoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645253A2B6FCE1E00D0BAAD /* BanqueMisr_demoAppTests.swift */; };
+		364525452B6FCE1E00D0BAAD /* BanqueMisr_demoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364525442B6FCE1E00D0BAAD /* BanqueMisr_demoAppUITests.swift */; };
+		364525472B6FCE1E00D0BAAD /* BanqueMisr_demoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364525462B6FCE1E00D0BAAD /* BanqueMisr_demoAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		364525372B6FCE1E00D0BAAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3645251E2B6FCE1D00D0BAAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 364525252B6FCE1D00D0BAAD;
+			remoteInfo = "BanqueMisr-demoApp";
+		};
+		364525412B6FCE1E00D0BAAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3645251E2B6FCE1D00D0BAAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 364525252B6FCE1D00D0BAAD;
+			remoteInfo = "BanqueMisr-demoApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		364525262B6FCE1D00D0BAAD /* BanqueMisr-demoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BanqueMisr-demoApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		364525292B6FCE1D00D0BAAD /* BanqueMisr_demoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanqueMisr_demoAppApp.swift; sourceTree = "<group>"; };
+		3645252B2B6FCE1D00D0BAAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3645252D2B6FCE1E00D0BAAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		364525302B6FCE1E00D0BAAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		364525362B6FCE1E00D0BAAD /* BanqueMisr-demoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BanqueMisr-demoAppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3645253A2B6FCE1E00D0BAAD /* BanqueMisr_demoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanqueMisr_demoAppTests.swift; sourceTree = "<group>"; };
+		364525402B6FCE1E00D0BAAD /* BanqueMisr-demoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BanqueMisr-demoAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		364525442B6FCE1E00D0BAAD /* BanqueMisr_demoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanqueMisr_demoAppUITests.swift; sourceTree = "<group>"; };
+		364525462B6FCE1E00D0BAAD /* BanqueMisr_demoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanqueMisr_demoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		364525232B6FCE1D00D0BAAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364525332B6FCE1E00D0BAAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3645253D2B6FCE1E00D0BAAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3645251D2B6FCE1D00D0BAAD = {
+			isa = PBXGroup;
+			children = (
+				364525282B6FCE1D00D0BAAD /* BanqueMisr-demoApp */,
+				364525392B6FCE1E00D0BAAD /* BanqueMisr-demoAppTests */,
+				364525432B6FCE1E00D0BAAD /* BanqueMisr-demoAppUITests */,
+				364525272B6FCE1D00D0BAAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		364525272B6FCE1D00D0BAAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				364525262B6FCE1D00D0BAAD /* BanqueMisr-demoApp.app */,
+				364525362B6FCE1E00D0BAAD /* BanqueMisr-demoAppTests.xctest */,
+				364525402B6FCE1E00D0BAAD /* BanqueMisr-demoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		364525282B6FCE1D00D0BAAD /* BanqueMisr-demoApp */ = {
+			isa = PBXGroup;
+			children = (
+				364525292B6FCE1D00D0BAAD /* BanqueMisr_demoAppApp.swift */,
+				3645252B2B6FCE1D00D0BAAD /* ContentView.swift */,
+				3645252D2B6FCE1E00D0BAAD /* Assets.xcassets */,
+				3645252F2B6FCE1E00D0BAAD /* Preview Content */,
+			);
+			path = "BanqueMisr-demoApp";
+			sourceTree = "<group>";
+		};
+		3645252F2B6FCE1E00D0BAAD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				364525302B6FCE1E00D0BAAD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		364525392B6FCE1E00D0BAAD /* BanqueMisr-demoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3645253A2B6FCE1E00D0BAAD /* BanqueMisr_demoAppTests.swift */,
+			);
+			path = "BanqueMisr-demoAppTests";
+			sourceTree = "<group>";
+		};
+		364525432B6FCE1E00D0BAAD /* BanqueMisr-demoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				364525442B6FCE1E00D0BAAD /* BanqueMisr_demoAppUITests.swift */,
+				364525462B6FCE1E00D0BAAD /* BanqueMisr_demoAppUITestsLaunchTests.swift */,
+			);
+			path = "BanqueMisr-demoAppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		364525252B6FCE1D00D0BAAD /* BanqueMisr-demoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3645254A2B6FCE1E00D0BAAD /* Build configuration list for PBXNativeTarget "BanqueMisr-demoApp" */;
+			buildPhases = (
+				364525222B6FCE1D00D0BAAD /* Sources */,
+				364525232B6FCE1D00D0BAAD /* Frameworks */,
+				364525242B6FCE1D00D0BAAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BanqueMisr-demoApp";
+			productName = "BanqueMisr-demoApp";
+			productReference = 364525262B6FCE1D00D0BAAD /* BanqueMisr-demoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		364525352B6FCE1E00D0BAAD /* BanqueMisr-demoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3645254D2B6FCE1E00D0BAAD /* Build configuration list for PBXNativeTarget "BanqueMisr-demoAppTests" */;
+			buildPhases = (
+				364525322B6FCE1E00D0BAAD /* Sources */,
+				364525332B6FCE1E00D0BAAD /* Frameworks */,
+				364525342B6FCE1E00D0BAAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				364525382B6FCE1E00D0BAAD /* PBXTargetDependency */,
+			);
+			name = "BanqueMisr-demoAppTests";
+			productName = "BanqueMisr-demoAppTests";
+			productReference = 364525362B6FCE1E00D0BAAD /* BanqueMisr-demoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3645253F2B6FCE1E00D0BAAD /* BanqueMisr-demoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 364525502B6FCE1E00D0BAAD /* Build configuration list for PBXNativeTarget "BanqueMisr-demoAppUITests" */;
+			buildPhases = (
+				3645253C2B6FCE1E00D0BAAD /* Sources */,
+				3645253D2B6FCE1E00D0BAAD /* Frameworks */,
+				3645253E2B6FCE1E00D0BAAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				364525422B6FCE1E00D0BAAD /* PBXTargetDependency */,
+			);
+			name = "BanqueMisr-demoAppUITests";
+			productName = "BanqueMisr-demoAppUITests";
+			productReference = 364525402B6FCE1E00D0BAAD /* BanqueMisr-demoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3645251E2B6FCE1D00D0BAAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					364525252B6FCE1D00D0BAAD = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					364525352B6FCE1E00D0BAAD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 364525252B6FCE1D00D0BAAD;
+					};
+					3645253F2B6FCE1E00D0BAAD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 364525252B6FCE1D00D0BAAD;
+					};
+				};
+			};
+			buildConfigurationList = 364525212B6FCE1D00D0BAAD /* Build configuration list for PBXProject "BanqueMisr-demoApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3645251D2B6FCE1D00D0BAAD;
+			productRefGroup = 364525272B6FCE1D00D0BAAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				364525252B6FCE1D00D0BAAD /* BanqueMisr-demoApp */,
+				364525352B6FCE1E00D0BAAD /* BanqueMisr-demoAppTests */,
+				3645253F2B6FCE1E00D0BAAD /* BanqueMisr-demoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		364525242B6FCE1D00D0BAAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364525312B6FCE1E00D0BAAD /* Preview Assets.xcassets in Resources */,
+				3645252E2B6FCE1E00D0BAAD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364525342B6FCE1E00D0BAAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3645253E2B6FCE1E00D0BAAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		364525222B6FCE1D00D0BAAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3645252C2B6FCE1D00D0BAAD /* ContentView.swift in Sources */,
+				3645252A2B6FCE1D00D0BAAD /* BanqueMisr_demoAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364525322B6FCE1E00D0BAAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3645253B2B6FCE1E00D0BAAD /* BanqueMisr_demoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3645253C2B6FCE1E00D0BAAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364525472B6FCE1E00D0BAAD /* BanqueMisr_demoAppUITestsLaunchTests.swift in Sources */,
+				364525452B6FCE1E00D0BAAD /* BanqueMisr_demoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		364525382B6FCE1E00D0BAAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 364525252B6FCE1D00D0BAAD /* BanqueMisr-demoApp */;
+			targetProxy = 364525372B6FCE1E00D0BAAD /* PBXContainerItemProxy */;
+		};
+		364525422B6FCE1E00D0BAAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 364525252B6FCE1D00D0BAAD /* BanqueMisr-demoApp */;
+			targetProxy = 364525412B6FCE1E00D0BAAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		364525482B6FCE1E00D0BAAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		364525492B6FCE1E00D0BAAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3645254B2B6FCE1E00D0BAAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BanqueMisr-demoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = SNX9U3HWNN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vladimirStasenko.BanqueMisr-demoApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3645254C2B6FCE1E00D0BAAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BanqueMisr-demoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = SNX9U3HWNN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vladimirStasenko.BanqueMisr-demoApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3645254E2B6FCE1E00D0BAAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SNX9U3HWNN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vladimirStasenko.BanqueMisr-demoAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BanqueMisr-demoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BanqueMisr-demoApp";
+			};
+			name = Debug;
+		};
+		3645254F2B6FCE1E00D0BAAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SNX9U3HWNN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vladimirStasenko.BanqueMisr-demoAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BanqueMisr-demoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BanqueMisr-demoApp";
+			};
+			name = Release;
+		};
+		364525512B6FCE1E00D0BAAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SNX9U3HWNN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vladimirStasenko.BanqueMisr-demoAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BanqueMisr-demoApp";
+			};
+			name = Debug;
+		};
+		364525522B6FCE1E00D0BAAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SNX9U3HWNN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vladimirStasenko.BanqueMisr-demoAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BanqueMisr-demoApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		364525212B6FCE1D00D0BAAD /* Build configuration list for PBXProject "BanqueMisr-demoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364525482B6FCE1E00D0BAAD /* Debug */,
+				364525492B6FCE1E00D0BAAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3645254A2B6FCE1E00D0BAAD /* Build configuration list for PBXNativeTarget "BanqueMisr-demoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3645254B2B6FCE1E00D0BAAD /* Debug */,
+				3645254C2B6FCE1E00D0BAAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3645254D2B6FCE1E00D0BAAD /* Build configuration list for PBXNativeTarget "BanqueMisr-demoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3645254E2B6FCE1E00D0BAAD /* Debug */,
+				3645254F2B6FCE1E00D0BAAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		364525502B6FCE1E00D0BAAD /* Build configuration list for PBXNativeTarget "BanqueMisr-demoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364525512B6FCE1E00D0BAAD /* Debug */,
+				364525522B6FCE1E00D0BAAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3645251E2B6FCE1D00D0BAAD /* Project object */;
+}
