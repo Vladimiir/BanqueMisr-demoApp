@@ -9,21 +9,54 @@ import SwiftUI
 
 struct CurrenciesListView: View {
     
-    @StateObject var vm = CurrenciesListViewModel()
+    @ObservedObject var vm: CurrenciesListViewModel
+    
+    init(vm: CurrenciesListViewModel) {
+        self.vm = vm
+    }
     
     var body: some View {
         NavigationStack {
-            VStack {
+            HStack {
+                Picker("FROM", selection: $vm.selectedFromCurrency) {
+                    if let currenciesList = vm.currenciesList {
+                        ForEach(Array(currenciesList.symbols.keys.enumerated()), id: \.element) { index, element in
+                            Text("\(element)")
+                                .tag(index)
+                        }
+                    }
+                }
+                .onChange(of: vm.selectedFromCurrency) { _, _ in
+                    vm.updateRates()
+                }
                 
+                Button(action: {
+                    vm.swapCurrencies()
+                }, label: {
+                    Text("↔")
+                        .font(.title)
+                })
+                
+                Picker("TO", selection: $vm.selectedToCurrency) {
+                    if let currenciesList = vm.currenciesList {
+                        ForEach(Array(currenciesList.symbols.keys.enumerated()), id: \.element) { index, element in
+                            Text("\(element)")
+                                .tag(index)
+                        }
+                    }
+                }
+                .onChange(of: vm.selectedToCurrency) { _, _ in
+                    vm.updateRates()
+                }
             }
             .navigationTitle(Text("Currency!"))
         }
-        .task {
-            vm.viewWillAppear()
-        }
+//        .task {
+//            vm.viewWillAppear()
+//        }
     }
 }
 
 #Preview {
-    CurrenciesListView()
+    CurrenciesListView(vm: CurrenciesListViewModel())
 }

@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct BanqueMisr_demoAppApp: App {
+    
+    @StateObject var vm = CurrenciesListViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            CurrenciesListView()
+            if vm.isLoaded {
+                CurrenciesListView(vm: vm)
+            } else {
+                LoadingView(vm: vm)
+            }
         }
     }
 }

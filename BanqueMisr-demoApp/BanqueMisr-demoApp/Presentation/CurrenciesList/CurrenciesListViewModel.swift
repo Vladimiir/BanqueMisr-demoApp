@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class CurrenciesListViewModel: ObservableObject {
     
@@ -14,12 +15,27 @@ class CurrenciesListViewModel: ObservableObject {
     // But for the demo project I will create dependencies manually
     private var currenciesService: ICurrenciesService = CurrenciesService()
     
+    @Published var currenciesList: CurrenciesListModel!
+    @Published var selectedFromCurrency = "USD"
+    @Published var selectedToCurrency = "EUR"
+    
+    // TODO: move it somewhere?
+    @Published var isLoaded = false
+    
     func viewWillAppear() {
-//        currenciesService.fetchLatestEndpoints { rates in
-//            
-//        }
-        currenciesService.fetchAllSupportedSymbols { currenciesList in
-            
+        currenciesService.fetchAllSupportedSymbols { [weak self] currenciesList in
+            DispatchQueue.main.async {
+                self?.currenciesList = currenciesList!
+                self?.isLoaded = true
+            }
         }
+    }
+    
+    func updateRates() {
+        
+    }
+    
+    func swapCurrencies() {
+        
     }
 }
