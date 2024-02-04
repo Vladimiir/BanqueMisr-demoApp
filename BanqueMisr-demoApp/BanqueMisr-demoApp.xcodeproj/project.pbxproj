@@ -23,6 +23,7 @@
 		364525652B6FE0FC00D0BAAD /* CurrenciesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364525642B6FE0FC00D0BAAD /* CurrenciesListViewModel.swift */; };
 		364525692B6FE89000D0BAAD /* CurrencyExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364525682B6FE89000D0BAAD /* CurrencyExchangeRates.swift */; };
 		3645256B2B6FF7CF00D0BAAD /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645256A2B6FF7CF00D0BAAD /* LoadingView.swift */; };
+		3645256E2B700EBC00D0BAAD /* ErrorAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645256D2B700EBC00D0BAAD /* ErrorAPIModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		364525672B6FE4BC00D0BAAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		364525682B6FE89000D0BAAD /* CurrencyExchangeRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeRates.swift; sourceTree = "<group>"; };
 		3645256A2B6FF7CF00D0BAAD /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		3645256D2B700EBC00D0BAAD /* ErrorAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAPIModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +163,7 @@
 		364525542B6FD38F00D0BAAD /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				3645256A2B6FF7CF00D0BAAD /* LoadingView.swift */,
+				3645256C2B70005400D0BAAD /* Loading */,
 				364525662B6FE0FF00D0BAAD /* CurrenciesList */,
 			);
 			path = Presentation;
@@ -183,6 +185,7 @@
 				3645255F2B6FDA4500D0BAAD /* Currency.swift */,
 				3645255D2B6FD9BE00D0BAAD /* CurrenciesListModel.swift */,
 				364525682B6FE89000D0BAAD /* CurrencyExchangeRates.swift */,
+				3645256D2B700EBC00D0BAAD /* ErrorAPIModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,6 +205,14 @@
 				364525642B6FE0FC00D0BAAD /* CurrenciesListViewModel.swift */,
 			);
 			path = CurrenciesList;
+			sourceTree = "<group>";
+		};
+		3645256C2B70005400D0BAAD /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				3645256A2B6FF7CF00D0BAAD /* LoadingView.swift */,
+			);
+			path = Loading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +348,7 @@
 				364525572B6FD3E900D0BAAD /* CurrenciesService.swift in Sources */,
 				3645255B2B6FD8ED00D0BAAD /* ServicesEndpoints.swift in Sources */,
 				3645252C2B6FCE1D00D0BAAD /* CurrenciesListView.swift in Sources */,
+				3645256E2B700EBC00D0BAAD /* ErrorAPIModel.swift in Sources */,
 				3645256B2B6FF7CF00D0BAAD /* LoadingView.swift in Sources */,
 				364525622B6FDD7800D0BAAD /* URLConstructor.swift in Sources */,
 				364525592B6FD84B00D0BAAD /* HttpClient.swift in Sources */,

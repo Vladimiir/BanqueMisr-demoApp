@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CurrenciesListModel: Codable, Hashable {
+struct CurrenciesListModel: Codable {
     let success: Bool
     let symbols: [String: String]
 }

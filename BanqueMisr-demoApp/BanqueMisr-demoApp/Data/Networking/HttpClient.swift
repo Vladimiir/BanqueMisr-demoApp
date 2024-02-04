@@ -9,9 +9,12 @@ import Foundation
 
 class HTTPClient {
     
+//    typealias Result = (Decodable?, ErrorAPIModel?)
+//    typealias ResponseResult = Result<Decodable, ErrorAPIModel>
+    
     func get<Response: Decodable>(with url: URL,
                                   type: Response.Type,
-                                  handler: @escaping (Response?) -> ()) {
+                                  handler: @escaping (Response) -> ()) {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -23,6 +26,8 @@ class HTTPClient {
                 
                 if let result = try? decoder.decode(type, from: data) {
                     handler(result)
+                } else if let result = try? decoder.decode(ErrorAPIModel.self, from: data) {
+                    print("Error = \(result)")
                 } else {
                     print("Invalid Response")
                 }

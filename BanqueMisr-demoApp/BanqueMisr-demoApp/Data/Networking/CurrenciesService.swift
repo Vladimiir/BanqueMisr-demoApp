@@ -10,7 +10,10 @@ import Foundation
 protocol ICurrenciesService {
     
     func fetchAllSupportedSymbols(handler: @escaping (CurrenciesListModel?) -> ())
-    func fetchLatestEndpoints(handler: @escaping (CurrencyExchangeRates?) -> ())
+    
+    func fetchLatestEndpoints(fromCurrency: String,
+                              toCurrency: String,
+                              handler: @escaping (CurrencyExchangeRates?) -> ())
 }
 
 class CurrenciesService: HTTPClient, ICurrenciesService {
@@ -30,11 +33,13 @@ class CurrenciesService: HTTPClient, ICurrenciesService {
         }
     }
     
-    func fetchLatestEndpoints(handler: @escaping (CurrencyExchangeRates?) -> ()) {
+    func fetchLatestEndpoints(fromCurrency: String,
+                              toCurrency: String,
+                              handler: @escaping (CurrencyExchangeRates?) -> ()) {
         let url = URLConstructor.addParams(to: ServicesEndpoints.latestPath,
                                            params: [.access_key: ServicesEndpoints.accessKey,
-                                                    .base: "USD",
-                                                    .symbols: "GBP"])
+                                                    .base: fromCurrency,
+                                                    .symbols: toCurrency])
         
         guard let url else {
             handler(nil)
