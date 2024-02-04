@@ -17,6 +17,7 @@ class CurrenciesListViewModel: ObservableObject {
     
     // TODO: preload data and then pass it here without force unwrap
     @Published var currenciesList: CurrenciesListModel!
+    @Published var exchangeRates: CurrencyExchangeRates?
     
     @Published var selectedFromCurrency = "EUR"
     @Published var selectedToCurrency = "USD"
@@ -31,28 +32,35 @@ class CurrenciesListViewModel: ObservableObject {
             DispatchQueue.main.async {
                 self?.currenciesList = currenciesList!
                 self?.isLoaded = true
+                self?.fetchRates()
+            }
+        }
+    }
+    
+    func fetchRates() {
+        currenciesService.fetchLatestEndpoints(fromCurrency: selectedFromCurrency,
+                                               toCurrency: selectedToCurrency) { [weak self] exchangeRates in
+            DispatchQueue.main.async {
+                self?.exchangeRates = exchangeRates
                 self?.updateRates()
             }
         }
     }
     
     func updateRates() {
-        currenciesService.fetchLatestEndpoints(fromCurrency: selectedFromCurrency,
-                                               toCurrency: selectedToCurrency) { [weak self] rates in
-            guard let self,
-                  let rate = rates?.rates.first?.value,
-                  let decimalFromCurrency = Decimal(string: self.textFromCurrency)
-            else {
-                return
-            }
-            
-            DispatchQueue.main.async {
-                self.textToCurrency = "\(decimalFromCurrency * rate)"
-            }
+        guard let rate = exchangeRates?.rates.first?.value,
+              let decimalFromCurrency = Decimal(string: self.textFromCurrency)
+        else {
+            return
         }
+        
+        self.textToCurrency = "\(decimalFromCurrency * rate)"
     }
     
     func swapCurrencies() {
-        
+        // FIXME: double call of 'fetchRates()'
+        let from = selectedFromCurrency
+        selectedFromCurrency = selectedToCurrency
+        selectedToCurrency = from
     }
 }

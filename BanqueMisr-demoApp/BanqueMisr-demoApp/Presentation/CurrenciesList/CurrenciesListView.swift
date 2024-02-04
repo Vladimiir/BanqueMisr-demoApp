@@ -22,14 +22,15 @@ struct CurrenciesListView: View {
                     // TODO: separate all these views
                     Picker("FROM", selection: $vm.selectedFromCurrency) {
                         if let currenciesList = vm.currenciesList {
-                            ForEach(Array(currenciesList.symbols.keys.enumerated()), id: \.element) { index, element in
+                            ForEach(Array(currenciesList.symbols.keys.sorted().enumerated()),
+                                    id: \.element) { index, element in
                                 Text("\(element)")
                                     .tag(index)
                             }
                         }
                     }
                     .onChange(of: vm.selectedFromCurrency) { _, _ in
-                        vm.updateRates()
+                        vm.fetchRates()
                     }
                     
                     Button(action: {
@@ -41,14 +42,15 @@ struct CurrenciesListView: View {
                     
                     Picker("TO", selection: $vm.selectedToCurrency) {
                         if let currenciesList = vm.currenciesList {
-                            ForEach(Array(currenciesList.symbols.keys.enumerated()), id: \.element) { index, element in
+                            ForEach(Array(currenciesList.symbols.keys.sorted().enumerated()),
+                                    id: \.element) { index, element in
                                 Text("\(element)")
                                     .tag(index)
                             }
                         }
                     }
                     .onChange(of: vm.selectedToCurrency) { _, _ in
-                        vm.updateRates()
+                        vm.fetchRates()
                     }
                 }
                 
@@ -56,6 +58,7 @@ struct CurrenciesListView: View {
                     TextField(text: $vm.textFromCurrency) {
                         Text("")
                     }
+                    .keyboardType(.numberPad)
                     .minimumScaleFactor(0.1)
                     .font(.title3)
                     .multilineTextAlignment(.center)
@@ -70,6 +73,7 @@ struct CurrenciesListView: View {
                     TextField(text: $vm.textToCurrency) {
                         Text("")
                     }
+                    .keyboardType(.numberPad)
                     .minimumScaleFactor(0.1)
                     .font(.title3)
                     .multilineTextAlignment(.center)
