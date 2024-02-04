@@ -15,8 +15,7 @@ class CurrenciesListViewModel: ObservableObject {
     // But for the demo project I will create dependencies manually
     private var currenciesService: ICurrenciesService = CurrenciesService()
     
-    // TODO: preload data and then pass it here without force unwrap
-    @Published var currenciesList: CurrenciesListModel!
+    @Published var currenciesList: CurrenciesListModel?
     @Published var exchangeRates: CurrencyExchangeRates?
     
     @Published var selectedFromCurrency = "EUR"
@@ -24,17 +23,19 @@ class CurrenciesListViewModel: ObservableObject {
     @Published var textFromCurrency = "1"
     @Published var textToCurrency = ""
     
+    /// To prevent the 'fetchRates()' double call
+    var isSwapCurrenciesPressed = false
+    
     /// The list of made currency exchanges
     var exchangesList: [CurrencyExchange] = []
     
-    // TODO: move it somewhere?
-    @Published var isLoaded = false
+    @Published var isCurrenciesPreloaded = false
     
     func viewWillAppear() {
         currenciesService.fetchAllSupportedSymbols { [weak self] currenciesList in
             DispatchQueue.main.async {
                 self?.currenciesList = currenciesList!
-                self?.isLoaded = true
+                self?.isCurrenciesPreloaded = true
                 self?.fetchRates()
             }
         }
@@ -70,7 +71,7 @@ class CurrenciesListViewModel: ObservableObject {
     }
     
     func swapCurrencies() {
-        // FIXME: double call of 'fetchRates()'
+        isSwapCurrenciesPressed = true
         let from = selectedFromCurrency
         selectedFromCurrency = selectedToCurrency
         selectedToCurrency = from

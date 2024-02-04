@@ -10,12 +10,11 @@ import SwiftUI
 @main
 struct BanqueMisr_demoAppApp: App {
     
-    // TODO: do this logic in any external model?
     @StateObject var vm = CurrenciesListViewModel()
     
     var body: some Scene {
         WindowGroup {
-            if vm.isLoaded {
+            if vm.isCurrenciesPreloaded {
                 CurrenciesListView(vm: vm)
             } else {
                 LoadingView(vm: vm)

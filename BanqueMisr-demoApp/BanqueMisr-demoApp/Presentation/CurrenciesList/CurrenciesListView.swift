@@ -49,6 +49,10 @@ struct CurrenciesListView: View {
                         }
                     }
                     .onChange(of: vm.selectedToCurrency) { _, _ in
+                        guard !vm.isSwapCurrenciesPressed else {
+                            vm.isSwapCurrenciesPressed = false
+                            return
+                        }
                         vm.fetchRates()
                     }
                 }

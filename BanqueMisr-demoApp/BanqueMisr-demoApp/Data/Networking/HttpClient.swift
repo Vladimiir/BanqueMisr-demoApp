@@ -9,9 +9,6 @@ import Foundation
 
 class HTTPClient {
     
-//    typealias Result = (Decodable?, ErrorAPIModel?)
-//    typealias ResponseResult = Result<Decodable, ErrorAPIModel>
-    
     func get<Response: Decodable>(with url: URL,
                                   type: Response.Type,
                                   handler: @escaping (Response) -> ()) {
@@ -22,7 +19,6 @@ class HTTPClient {
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data {
                 let decoder = JSONDecoder()
-//                decoder.dateDecodingStrategy = .formatted(.yyyyMMdd)
                 
                 if let result = try? decoder.decode(type, from: data) {
                     handler(result)
