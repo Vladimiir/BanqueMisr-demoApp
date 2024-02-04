@@ -15,7 +15,27 @@ protocol ICurrenciesService {
 class CurrenciesService: HTTPClient, ICurrenciesService {
     
     func fetchAllSupportedSymbols(handler: @escaping (CurrenciesListModel?) -> ()) {
-        guard let url = URL(string: ServicesEndpoints.currenciesPath) else {
+        let url = URLConstructor.addParams(to: ServicesEndpoints.currenciesPath,
+                                           params: [.access_key: ServicesEndpoints.accessKey])
+        
+        guard let url else {
+            handler(nil)
+            return
+        }
+        
+        get(with: url,
+            type: CurrenciesListModel.self) { result in
+            handler(result)
+        }
+    }
+    
+    func fetchLatestEndpoints(handler: @escaping (CurrenciesListModel?) -> ()) {
+        let url = URLConstructor.addParams(to: ServicesEndpoints.currenciesPath,
+                                           params: [.access_key: ServicesEndpoints.accessKey,
+                                                    .base: "USD",
+                                                    .symbols: "GBP"])
+        
+        guard let url else {
             handler(nil)
             return
         }

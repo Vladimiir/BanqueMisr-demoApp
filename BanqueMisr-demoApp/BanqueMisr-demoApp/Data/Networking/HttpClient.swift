@@ -12,7 +12,6 @@ class HTTPClient {
     func get<Response: Decodable>(with url: URL,
                                   type: Response.Type,
                                   handler: @escaping (Response?) -> ()) {
-        let set: Set<String> = []
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")

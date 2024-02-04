@@ -1,5 +1,5 @@
 //
-//  Util.swift
+//  URLConstructor.swift
 //  BanqueMisr-demoApp
 //
 //  Created by Vladimir Stasenko on 04.02.2024.
@@ -10,8 +10,9 @@ import Foundation
 struct URLConstructor {
     
     enum Params: String {
-        case page
-        case sortBy = "sort_by"
+        case access_key
+        case base
+        case symbols
     }
     
     static func addParams(to path: String,

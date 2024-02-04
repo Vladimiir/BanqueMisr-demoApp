@@ -8,5 +8,6 @@
 import Foundation
 
 struct CurrenciesListModel: Codable {
-    
+    let success: Bool
+    let symbols: [Currency]
 }

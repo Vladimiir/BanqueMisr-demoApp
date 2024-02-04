@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CurrenciesListView.swift
 //  BanqueMisr-demoApp
 //
 //  Created by Vladimir Stasenko on 04.02.2024.
@@ -7,7 +7,10 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CurrenciesListView: View {
+    
+    @StateObject var vm = CurrenciesListViewModel()
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -15,9 +18,12 @@ struct ContentView: View {
             }
             .navigationTitle(Text("Currency!"))
         }
+        .task {
+            vm.viewWillAppear()
+        }
     }
 }
 
 #Preview {
-    ContentView()
+    CurrenciesListView()
 }
